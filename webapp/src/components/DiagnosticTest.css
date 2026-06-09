@@ -94,9 +94,15 @@
 }
 
 .option-btn.selected {
-  background: rgba(56, 189, 248, 0.1);
+  background: rgba(56, 189, 248, 0.15);
   border-color: var(--accent-blue);
-  box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);
+  box-shadow: 0 0 0 2px var(--accent-blue), 0 4px 15px rgba(56, 189, 248, 0.3);
+  font-weight: bold;
+  transform: translateX(5px);
+}
+.option-btn.selected .option-key {
+  background: var(--accent-blue);
+  color: #fff;
 }
 
 .option-btn.correct {
