@@ -1,0 +1,37 @@
+[
+  {
+    "id": "SKILL-MATH-001",
+    "domain": "math_logic",
+    "name": "fraction_basic",
+    "description": "Nhận biết và hiểu khái niệm cơ bản về phân số",
+    "prerequisites": []
+  },
+  {
+    "id": "SKILL-MATH-002",
+    "domain": "math_logic",
+    "name": "fraction_comparison",
+    "description": "So sánh hai hoặc nhiều phân số",
+    "prerequisites": ["fraction_basic"]
+  },
+  {
+    "id": "SKILL-MATH-003",
+    "domain": "math_logic",
+    "name": "fraction_word_problem",
+    "description": "Giải toán lời văn liên quan đến phân số",
+    "prerequisites": ["fraction_comparison"]
+  },
+  {
+    "id": "SKILL-VIE-001",
+    "domain": "vietnamese",
+    "name": "reading_main_idea",
+    "description": "Nắm bắt ý chính của đoạn văn",
+    "prerequisites": []
+  },
+  {
+    "id": "SKILL-VIE-002",
+    "domain": "vietnamese",
+    "name": "reading_inference",
+    "description": "Suy luận từ ngữ liệu trong đoạn văn",
+    "prerequisites": ["reading_main_idea"]
+  }
+]

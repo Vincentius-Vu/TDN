@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+:root {
+  /* Space Theme Colors (Dark) */
+  --space-dark: #0f172a;
+  --space-light: #1e293b;
+  --star-glow: #e2e8f0;
+  --accent-blue: #38bdf8;
+  --accent-purple: #c084fc;
+  --accent-green: #34d399;
+  --accent-red: #fb7185;
+  --accent-yellow: #fcd34d;
+  
+  --bg-primary: var(--space-dark);
+  --bg-secondary: var(--space-light);
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  
+  /* Glassmorphism settings */
+  --glass-bg: rgba(30, 41, 59, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(12px);
+
+  /* Animation Speeds */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+}
+
+[data-theme="light"] {
+  /* Daylight Theme Colors (Light) */
+  --space-dark: #f8fafc;
+  --space-light: #ffffff;
+  --star-glow: #334155;
+  --accent-blue: #0284c7;
+  --accent-purple: #9333ea;
+  --accent-green: #059669;
+  --accent-red: #e11d48;
+  --accent-yellow: #d97706;
+  
+  --bg-primary: #f0fdf4; /* Very light green/blue tint */
+  --bg-secondary: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  
+  --glass-bg: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(0, 0, 0, 0.1);
+}
+
+/* Accessibility: Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --transition-fast: 0s;
+    --transition-normal: 0s;
+  }
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: 'Nunito', sans-serif;
+  background-color: var(--bg-primary);
+  background-image: 
+    radial-gradient(circle at 15% 50%, rgba(56, 189, 248, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 85% 30%, rgba(192, 132, 252, 0.15) 0%, transparent 50%);
+  background-attachment: fixed;
+  color: var(--text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 800;
+  margin-top: 0;
+  color: var(--star-glow);
+}
+
+button {
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: all var(--transition-fast);
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Global Utility Classes */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Scrollbar for inner lists */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--space-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent-purple);
+  border-radius: 4px;
+}
+
+/* Shake Animation */
+@keyframes shakeError {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.shake {
+  animation: shakeError 0.3s ease-in-out;
+}
+
+/* Glow Animation */
+@keyframes glowSuccess {
+  0% { box-shadow: 0 0 5px var(--accent-green); }
+  50% { box-shadow: 0 0 20px var(--accent-green), 0 0 30px var(--accent-green); }
+  100% { box-shadow: 0 0 5px var(--accent-green); }
+}
+
+.glow {
+  animation: glowSuccess 1s ease-in-out infinite;
+}

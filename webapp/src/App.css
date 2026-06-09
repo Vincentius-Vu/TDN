@@ -1,0 +1,146 @@
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-header {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-radius: 20px;
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.app-header h1 {
+  font-size: 24px;
+  margin: 0;
+  background: linear-gradient(135deg, var(--accent-blue), var(--accent-purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  flex: 1;
+  min-width: 250px;
+}
+
+.header-controls {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.header-btn {
+  background: rgba(56, 189, 248, 0.2) !important;
+  color: var(--accent-blue) !important;
+  border: 1px solid var(--accent-blue) !important;
+  padding: 8px 16px !important;
+  border-radius: 12px !important;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.header-btn:hover {
+  background: var(--accent-blue) !important;
+  color: var(--space-light) !important;
+  box-shadow: 0 0 15px var(--accent-blue) !important;
+}
+
+/* Settings Modal */
+.settings-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(15, 23, 42, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  backdrop-filter: blur(5px);
+}
+
+.settings-modal {
+  width: 90%;
+  max-width: 400px;
+  padding: 30px;
+  animation: fadeIn 0.3s ease;
+}
+
+.setting-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.setting-row select, .setting-row button.toggle-btn {
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--text-main);
+  border: 1px solid var(--glass-border);
+  padding: 8px 12px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.header-btn:hover {
+  background: var(--accent-blue) !important;
+  color: var(--space-dark) !important;
+  box-shadow: 0 0 15px var(--accent-blue) !important;
+}
+
+.welcome-screen {
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--glass-border);
+  padding: 40px;
+  border-radius: 24px;
+  text-align: center;
+}
+
+.welcome-screen h2 {
+  font-size: 32px;
+  color: var(--text-main);
+  margin-bottom: 15px;
+}
+
+.info-box {
+  background: rgba(255, 255, 255, 0.05);
+  border-left: 4px solid var(--accent-purple);
+  padding: 20px;
+  border-radius: 0 12px 12px 0;
+  margin: 30px auto;
+  text-align: left;
+  max-width: 600px;
+}
+
+.info-box p {
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.start-btn {
+  background: linear-gradient(135deg, var(--accent-purple), #9333ea);
+  color: white;
+  font-size: 20px;
+  padding: 15px 40px;
+  border-radius: 30px;
+  box-shadow: 0 10px 20px rgba(147, 51, 234, 0.3);
+  margin-top: 20px;
+}
+
+.start-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 25px rgba(147, 51, 234, 0.4);
+}
+
+.start-btn:active {
+  transform: translateY(1px);
+}

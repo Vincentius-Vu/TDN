@@ -1,0 +1,40 @@
+{
+  "student_id": "hs_tdn_001",
+  "name": "Demo Student",
+  "skill_mastery": {
+    "fraction_basic": 0.5,
+    "fraction_comparison": 0.2,
+    "fraction_word_problem": 0.0,
+    "reading_main_idea": 0.6,
+    "reading_inference": 0.3
+  },
+  "error_profile": {
+    "concept_error": 0,
+    "calculation_error": 0,
+    "detail_vs_main_idea": 0,
+    "word_problem_comprehension": 0
+  },
+  "zpd_band": {
+    "math_logic": 1,
+    "vietnamese": 1
+  },
+  "gamification": {
+    "xp": 0,
+    "level": 1,
+    "soft_streak": 0,
+    "badges": []
+  },
+  "quests": {
+    "daily": [],
+    "recovery": []
+  },
+  "learning_behavior": {
+    "effort_xp": 0,
+    "mistakes_repaired": 0,
+    "hints_used": 0,
+    "recovery_quests_completed": 0
+  },
+  "anti_grind_log": {},
+  "recent_performance": {},
+  "learning_events": []
+}

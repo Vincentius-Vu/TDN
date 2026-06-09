@@ -1,0 +1,32 @@
+{
+  "simulation_id": "sim_1780954001830",
+  "bot_type": "random",
+  "total_questions": 10,
+  "accuracy": 0.5,
+  "avg_hint_used": 1.4,
+  "mastery_after": {
+    "fraction_basic": 0.5,
+    "fraction_comparison": 0,
+    "fraction_word_problem": 0,
+    "reading_main_idea": 0.38,
+    "reading_inference": 0.05,
+    "general_knowledge": 0.04
+  },
+  "zpd_after": {
+    "math_logic": 1,
+    "vietnamese": 1,
+    "mixed": 1
+  },
+  "top_errors": {
+    "concept_error": 3,
+    "calculation_error": 2,
+    "detail_vs_main_idea": 1,
+    "word_problem_comprehension": 4,
+    "careless_reading": 17,
+    "lcm_error": 2,
+    "fraction_addition": 4,
+    "reading_comprehension": 1,
+    "inference_error": 2,
+    "superficial_reading": 2
+  }
+}

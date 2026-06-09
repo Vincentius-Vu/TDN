@@ -1,0 +1,132 @@
+[
+  {
+    "id": "MATH-FRAC-001",
+    "skill": "fraction_comparison",
+    "domain": "math_logic",
+    "difficulty": 1,
+    "estimated_time_sec": 60,
+    "question_type": "multiple_choice",
+    "language": "en",
+    "content": "Which fraction is larger: 1/2 or 1/3?",
+    "options": {
+      "A": "1/2",
+      "B": "1/3",
+      "C": "They are equal",
+      "D": "Cannot be determined"
+    },
+    "answer": "A",
+    "hint_levels": [
+      "Think about cutting a pizza. If you cut it into 2 pieces, is the piece bigger or smaller than if you cut it into 3 pieces?",
+      "The larger the denominator (the bottom number), the smaller each piece is.",
+      "1/2 means one out of two pieces. 1/3 means one out of three pieces. One half is bigger than one third."
+    ],
+    "solution": "1/2 is larger than 1/3 because dividing something into 2 parts results in larger parts than dividing it into 3 parts. Therefore, A is correct.",
+    "error_tags": ["concept_error"],
+    "prerequisites": ["fraction_basic"],
+    "zpd_level": "core"
+  },
+  {
+    "id": "MATH-FRAC-002",
+    "skill": "fraction_comparison",
+    "domain": "math_logic",
+    "difficulty": 2,
+    "estimated_time_sec": 90,
+    "question_type": "multiple_choice",
+    "language": "en",
+    "content": "Compare 3/4 and 5/6. Which one is greater?",
+    "options": {
+      "A": "3/4",
+      "B": "5/6",
+      "C": "They are equal",
+      "D": "None of the above"
+    },
+    "answer": "B",
+    "hint_levels": [
+      "To compare them easily, find a common denominator for 4 and 6.",
+      "The least common multiple of 4 and 6 is 12.",
+      "Convert 3/4 into 12ths: 3 x 3 = 9, so 9/12. Convert 5/6 into 12ths: 5 x 2 = 10, so 10/12. Which is bigger: 9/12 or 10/12?"
+    ],
+    "solution": "Convert to common denominator 12. 3/4 = 9/12. 5/6 = 10/12. Since 10/12 > 9/12, 5/6 is greater. Answer B is correct.",
+    "error_tags": ["calculation_error", "lcm_error"],
+    "prerequisites": ["fraction_basic"],
+    "zpd_level": "core"
+  },
+  {
+    "id": "MATH-FRAC-003",
+    "skill": "fraction_word_problem",
+    "domain": "math_logic",
+    "difficulty": 3,
+    "estimated_time_sec": 120,
+    "question_type": "multiple_choice",
+    "language": "en",
+    "content": "A pizza is cut into 8 equal slices. Tom eats 1/4 of the pizza, and Jerry eats 3/8 of it. How much pizza is left?",
+    "options": {
+      "A": "1/8",
+      "B": "1/4",
+      "C": "3/8",
+      "D": "1/2"
+    },
+    "answer": "C",
+    "hint_levels": [
+      "First, figure out how many slices Tom ate. What is 1/4 of 8 slices?",
+      "Tom ate 2 slices (1/4 of 8). Jerry ate 3 slices (3/8 of 8). How many slices did they eat in total?",
+      "They ate 2 + 3 = 5 slices in total. There are 8 slices in a whole pizza. How many are left?"
+    ],
+    "solution": "Tom ate 1/4 * 8 = 2 slices. Jerry ate 3/8 * 8 = 3 slices. Total eaten = 5 slices. Left = 8 - 5 = 3 slices. As a fraction of the whole pizza, that is 3/8. Therefore, C is correct.",
+    "error_tags": ["word_problem_comprehension", "fraction_addition"],
+    "prerequisites": ["fraction_comparison"],
+    "zpd_level": "challenge"
+  },
+  {
+    "id": "VIE-READ-001",
+    "skill": "reading_main_idea",
+    "domain": "vietnamese",
+    "difficulty": 1,
+    "estimated_time_sec": 120,
+    "question_type": "multiple_choice",
+    "language": "vi",
+    "content": "Đọc đoạn văn sau:\n\"Cây xanh là lá phổi của Trái Đất. Chúng hút khí các-bô-níc và nhả ra khí ô-xy, giúp không khí trong lành. Hơn nữa, rễ cây bám chặt vào đất giúp chống xói mòn và lũ lụt. Rừng còn là nơi ở của hàng ngàn loài động vật quý hiếm.\"\nÝ chính của đoạn văn trên là gì?",
+    "options": {
+      "A": "Cây xanh tạo ra ô-xy để con người hô hấp.",
+      "B": "Rễ cây giúp chống lũ lụt.",
+      "C": "Cây xanh mang lại nhiều lợi ích quan trọng cho môi trường và sự sống.",
+      "D": "Rừng là nơi ở của động vật."
+    },
+    "answer": "C",
+    "hint_levels": [
+      "Ý chính phải bao quát toàn bộ nội dung của đoạn văn, không chỉ nói về 1 khía cạnh.",
+      "Các câu A, B, D chỉ nói về từng lợi ích nhỏ. Câu nào tóm tắt được toàn bộ các lợi ích đó?",
+      "Câu C nhắc đến 'nhiều lợi ích quan trọng', bao gồm cả tạo ô-xy, chống lũ lụt và làm nơi ở cho động vật."
+    ],
+    "solution": "Đoạn văn liệt kê nhiều lợi ích của cây xanh (tạo ô-xy, chống lũ lụt, cung cấp nơi ở cho động vật). Câu C tổng hợp đầy đủ và khái quát nhất toàn bộ nội dung đó.",
+    "error_tags": ["detail_vs_main_idea", "reading_comprehension"],
+    "prerequisites": [],
+    "zpd_level": "core"
+  },
+  {
+    "id": "VIE-READ-002",
+    "skill": "reading_inference",
+    "domain": "vietnamese",
+    "difficulty": 2,
+    "estimated_time_sec": 90,
+    "question_type": "multiple_choice",
+    "language": "vi",
+    "content": "Đọc đoạn trích sau:\n\"Trời mưa xối xả. Bạn Lan đi học về, người ướt sũng nhưng hai tay vẫn vòng lên trước ngực ôm chặt chiếc cặp sách nilon bọc bên ngoài. Về đến nhà, Lan vội mở cặp ra, mỉm cười nói: 'May quá, sách vở vẫn khô nguyên'.\"\nQua hành động của Lan, em có thể suy ra Lan là người như thế nào?",
+    "options": {
+      "A": "Lan là người rất sợ mưa.",
+      "B": "Lan rất yêu quý và cẩn thận giữ gìn sách vở.",
+      "C": "Lan không mang áo mưa khi đi học.",
+      "D": "Lan chỉ quan tâm đến chiếc cặp nilon."
+    },
+    "answer": "B",
+    "hint_levels": [
+      "Hãy chú ý hành động 'ôm chặt chiếc cặp' mặc kệ người bị ướt sũng.",
+      "Câu nói 'May quá, sách vở vẫn khô nguyên' cho thấy sự quan tâm hàng đầu của Lan lúc đó là gì?",
+      "Việc Lan mặc kệ bản thân bị ướt để bảo vệ sách vở chứng tỏ Lan rất quý trọng sách vở của mình."
+    ],
+    "solution": "Hành động ôm chặt cặp sách khi trời mưa và cảm giác vui mừng khi sách vở không bị ướt cho thấy Lan rất cẩn thận và trân trọng đồ dùng học tập. Đáp án B là suy luận đúng đắn nhất.",
+    "error_tags": ["inference_error", "superficial_reading"],
+    "prerequisites": ["reading_main_idea"],
+    "zpd_level": "core"
+  }
+]

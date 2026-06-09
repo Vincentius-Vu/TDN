@@ -1,0 +1,36 @@
+# Cấu hình mặc định hệ thống luyện thi Trần Đại Nghĩa
+
+exam_target: "Tuyển sinh lớp 6 Trường THCS và THPT Trần Đại Nghĩa, TP.HCM"
+school: "Trường THCS và THPT Trần Đại Nghĩa"
+city: "TP. Hồ Chí Minh"
+target_grade: "Lớp 6"
+current_student_grade: "Lớp 5"
+study_duration_default: "12 tháng"
+
+# Cấu hình kiểm định (Review Configuration)
+quality_thresholds:
+  minimum_quality_score: 85
+  critical_error_allowed: 0
+  major_error_allowed: 0
+  max_review_cycles: 3
+
+# Cấu hình các giai đoạn lộ trình 12 tháng
+roadmap_phases:
+  - phase: 1
+    name: "Đánh giá và Xây nền"
+    duration_months: 2
+  - phase: 2
+    name: "Củng cố kiến thức lõi"
+    duration_months: 3
+  - phase: 3
+    name: "Phát triển tư duy logic và diễn đạt"
+    duration_months: 3
+  - phase: 4
+    name: "Luyện bài tích hợp và mini-test"
+    duration_months: 2
+  - phase: 5
+    name: "Luyện đề mô phỏng (Mock Test)"
+    duration_months: 1
+  - phase: 6
+    name: "Tối ưu hóa, sửa lỗi và tâm lý"
+    duration_months: 1
